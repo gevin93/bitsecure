@@ -41,7 +41,7 @@ public class NotificationController {
             IOUtils.copy(is, new FileOutputStream(file));
 
         } catch (java.io.IOException e) {
-            LOG.error("Unable to download file from : {}", path);
+            LOG.error("Unable to download file from : {}", path, e);
         }
 
     }
